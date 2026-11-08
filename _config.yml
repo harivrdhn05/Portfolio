@@ -1,0 +1,5 @@
+title: Harsha Vardhan
+permalink: /blog/:title/
+# If your site lives at username.github.io/repo-name (not username.github.io),
+# uncomment the next line and put your repo name:
+# baseurl: "/repo-name"

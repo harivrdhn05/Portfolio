@@ -1,0 +1,24 @@
+:root{--bg:#f4f6f8;--ink:#1b2733;--muted:#53626f;--line:#d4dce3;--accent:#3b5f7d;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#141c24;--ink:#e8edf2;--muted:#a3b1be;--line:#2e3d4a;--accent:#8fb2d1}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.125rem/1.7 "Source Sans 3","Segoe UI",system-ui,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
+.narrow{max-width:44rem;padding-top:2.5rem;padding-bottom:3rem}
+.top{border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding-top:1rem;padding-bottom:1rem}
+.brand{font:800 1.1rem "Libre Franklin",Arial,sans-serif;color:var(--ink);text-decoration:none}
+nav{display:flex;gap:1.5rem;font-weight:600}
+nav a{color:var(--ink);text-decoration:none}
+h1,h2{font-family:"Libre Franklin",Arial,sans-serif;line-height:1.2}
+h1{font-size:clamp(2rem,5vw,2.8rem);margin:0 0 .5rem}
+.meta{color:var(--muted);font-size:.95rem}
+.lede{color:var(--muted)}
+.posts{list-style:none;padding:0}
+.posts li{padding:1.25rem 0;border-top:1px solid var(--line)}
+.posts a{font:700 1.3rem "Libre Franklin",Arial,sans-serif}
+.posts .meta{margin-left:.75rem}
+.posts p{margin:.3rem 0 0;color:var(--muted)}
+.post img{max-width:100%;height:auto}
+.post pre{overflow-x:auto;padding:1rem;border:1px solid var(--line);border-radius:.4rem}
+footer{padding:2rem 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}

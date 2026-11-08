@@ -1,0 +1,17 @@
+---
+layout: default
+title: Blog
+---
+<h1>Blog</h1>
+<p class="lede">Notes on what I’m learning in AI, machine learning, and new technologies.</p>
+<ul class="posts">
+{% for post in site.posts %}
+<li>
+<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+<span class="meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+{% if post.summary %}<p>{{ post.summary }}</p>{% endif %}
+</li>
+{% else %}
+<li>No posts yet.</li>
+{% endfor %}
+</ul>
